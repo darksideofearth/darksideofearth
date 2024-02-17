@@ -1,0 +1,167 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap');
+
+body {
+    font-family: 'Poppins', sans-serif;
+    background: #212121;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+/* SECTION CHARITY START */
+.charity {
+    background-color: #212121;
+    padding: 80px 20px;
+}
+
+.charity-wrapper {
+    max-width: 750px;
+    margin: 0 auto;
+}
+
+.charity-wrapper span {
+    text-transform: uppercase;
+    letter-spacing: 5px;
+    color: #B33CDB;
+    font-size: 14px;
+    font-weight: 700;
+}
+
+.charity-box-text {
+    text-align: left;
+}
+
+.charity-box-text h3 {
+    color: #ffffff;
+    margin: 15px 0;
+    font-size: 24px;
+}
+
+.charity-box-text p {
+    color: #ffffff;
+    margin: 15px 0;
+    font-size: 18px;
+}
+
+.modern-bullets {
+    list-style: none;
+    padding-left: 20px;
+}
+
+.modern-bullets li {
+    position: relative;
+    color: #ffffff;
+    margin-bottom: 10px;
+    padding-left: 20px;
+    font-size: 16px;
+}
+
+.modern-bullets li:before {
+    content: "\2022";
+    position: absolute;
+    left: 0;
+    color: #B33CDB;
+    font-size: 18px;
+}
+
+/* Neue Section */
+.new-section {
+    background-color: #212121;
+    padding: 80px 20px;
+}
+
+.section-content {
+    text-align: center; /* Zentriert den Text im responsiven Modus */
+    color: #ffffff;
+}
+
+.section-content h3 {
+    font-size: 24px;
+    margin-bottom: 15px;
+}
+
+/* Footer-Stil */
+footer {
+    padding: 50px 20px;
+    background-color: #212121;
+}
+
+footer img {
+    width: 150px;
+    height: auto;
+}
+
+.footer-wrapper {
+    display: flex;
+    justify-content: space-between;
+    padding-bottom: 50px;
+    border-bottom: 1px solid grey;
+}
+
+.footer-links,
+.footer-social-links {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    gap: 25px;
+    color: #ffffff;
+}
+
+.footer-links li,
+.footer-social-links li {
+    display: inline;
+}
+
+.footer-links li a,
+.footer-social-links li a {
+    color: #ffffff;
+    text-decoration: none;
+}
+
+.cp-write {
+    text-align: center;
+    margin-top: 30px;
+    color: #ffffff;
+}
+
+/* Responsive Styles */
+@media screen and (max-width: 768px) {
+    .charity,
+    .new-section,
+    footer {
+        padding: 50px 10px;
+    }
+
+    .charity-box-text h3,
+    .section-content h3 {
+        font-size: 20px;
+    }
+
+    .charity-box-text p,
+    .section-content p {
+        font-size: 16px;
+    }
+
+    .modern-bullets li {
+        font-size: 14px;
+    }
+
+    .footer-wrapper {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .footer-links,
+    .footer-social-links {
+        padding-left: 0;
+        padding-right: 0;
+        margin-top: 20px;
+    }
+}
